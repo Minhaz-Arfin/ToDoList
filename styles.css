@@ -23,6 +23,7 @@
     border-radius: 10px;
 }
 
+
 .todo-app h2{
     color: #002765;
     display: flex;
@@ -110,4 +111,33 @@ ul li span{
 
 ul li span:hover{
     background: #edeef0;   
+}
+
+/* for smaller screens */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 5px;
+    }
+
+    .todo-app {
+        max-width: 90%;
+        margin: 50px auto 20px;
+        padding: 20px;
+        /* Redefine styles for .todo-app on small screens */
+    }
+
+    .row {
+        padding-left: 10px;
+        /* Redefine styles for .row on small screens */
+    }
+
+    input {
+        padding: 5px;
+        /* Redefine styles for input on small screens */
+    }
+    button {
+        padding: 10px 30px;
+        /* Redefine styles for button on small screens */
+    }
 }
